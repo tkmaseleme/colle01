@@ -1,11 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tmaselem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/28 14:53:34 by tmaselem          #+#    #+#             */
+/*   Updated: 2019/01/28 15:07:14 by tmaselem         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "includes/libft.h"
 
-int	check_puzzle(char **tab, int n);
-int	check_line(char **tab, char nb, int x);
-int	check_column(char **tab, char nb, int y);
-int	check_block(char **tab, int x, int y, char nb);
-
+int		check_puzzle(char **tab, int n);
+int		check_line(char **tab, char nb, int x);
+int		check_column(char **tab, char nb, int y);
+int		check_block(char **tab, int x, int y, char nb);
 
 void	display(char **tab)
 {
@@ -28,7 +38,7 @@ void	display(char **tab)
 	}
 }
 
-int	solver(char **puzzle, int position)
+int		solver(char **puzzle, int position)
 {
 	int		x;
 	int		y;
